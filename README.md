@@ -18,3 +18,35 @@ Switch#config
 Switch_config#interface range gpON 0/1:1-10
 Switch_config_if_range#gpon onu loopback-detect protocol private
 Switch_config_if_range#gpon onu uni 1 loopback-detect enable
+--
+##
+Reset Commands:
+
+Username: admin
+
+Password:
+
+
+
+
+Welcome to BDCOM P3310D EPON OLT
+
+
+
+
+
+OLT>enable
+
+OLT#
+
+OLT#delete startup-config
+this file will be erased, are you sure? (y/n)y
+
+OLT#delete config.db
+this file will be erased, are you sure? (y/n)y
+
+OLT#delete ifindex-config
+this file will be erased, are you sure? (y/n)y
+
+OLT#reboot
+Do you want to reboot the Switch (y/n)?y
